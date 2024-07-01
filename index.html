@@ -1,13 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <h1 class="header-content">My Tech Goals for the Next 2 Years</h1>
+    </header>
+    <main>
+      <section class="profile">
+        <img
+          src="./images/ayo.jpg"
+          alt="Slack Profile Picture"
+          data-testid="slackProfilePicture"
+        />
+        <div class="profile-info">
+          <p data-testid="slackDisplayName">Ayodeji Akinola</p>
+          <p data-testid="slackEmail">ayodejiaakinola007@gmail.com</p>
+        </div>
+      </section>
+      <section class="goals">
+        <h2>Goals</h2>
+        <ul>
+          <li>
+            <h3>Become proficient in Becoming aa Full Stack Developer</h3>
+            <p>
+              Over the next two years, I aim to deepen my understanding and
+              skills in Next.js, React, Tailwind, JavaScript, Phyton, and Git
+              and GitHub. This includes building complex, dynamic web
+              applications that leverage the full power of these frameworks. I
+              plan to follow tutorials, take advanced courses, and build
+              multiple projects to solidify my knowledge.
+            </p>
+          </li>
+          <li>
+            <h3>Contribute to open-source projects</h3>
+            <p>
+              Giving back to the community is important to me. I will actively
+              seek out and contribute to open-source projects related to my
+              areas of interest, such as web development and software
+              engineering. This will not only improve my coding skills but also
+              help me connect with other developers and learn from their
+              experiences.
+            </p>
+          </li>
+          <li>
+            <h3>Build a portfolio of tech blogs</h3>
+            <p>
+              Writing about technology is a passion of mine. Over the next two
+              years, I will create and maintain a tech blog where I share
+              insights, tutorials, and updates on the latest trends in the tech
+              industry. This will help me improve my communication skills and
+              establish my presence in the tech community.
+            </p>
+          </li>
+          <li>
+            <h3>Gain expertise in backend development with Node.js</h3>
+            <p>
+              While I have a good understanding of frontend development, I want
+              to become equally proficient in backend development. I will focus
+              on learning Node.js, building RESTful APIs, and working with
+              databases. This will enable me to become a full-stack developer
+              and take on more complex and comprehensive projects.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="current-info">
+        <p>
+          Current Time (UTC):
+          <span id="currentTimeUTC" data-testid="currentTimeUTC"></span>
+        </p>
+        <p>
+          Current Day: <span id="currentDay" data-testid="currentDay"></span>
+        </p>
+      </section>
+      <section class="links">
+        <h2>Useful Links</h2>
+        <ul>
+          <li>
+            <a
+              href="https://hng.tech/learn"
+              data-testid="hngLink"
+              target="_blank"
+              >HNG Learn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://keyword.dog"
+              data-testid="keywordLink"
+              target="_blank"
+              >Keyword Dog</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://scrapeanyweb.site"
+              data-testid="scrapeanywebLink"
+              target="_blank"
+              >Scrape Any Web</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer-content">
+      <p>&copy; 2024 Ayodeji Akinola</p>
+    </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
